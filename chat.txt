@@ -1,0 +1,63 @@
+Hi Vasile - thanks for taking the time to read the brief.
+hi
+S
+We're running PHP 7.4 and MariaDB 5.5.68
+yes
+S
+Are you confident in this kind of map search / display functionality?
+yes sure
+i did similar one before
+S
+And do you have your own Google API key to develop with initially?
+nope
+S
+Are you able to set one up?
+all of mine are expired already
+white frowning face emoji
+if you let me use your api key, then it would be great help
+Do you know which key you need?
+S
+Is it the javascipt API key?
+google map api key
+???
+testing?
+I think you might need a geocoding api too
+S
+OK - can you delivery this by Friday morning? Within the $500 budget?
+maybe
+if i need it, i will use
+sure , agree
+and i can
+S
+OK - do you have your own dev environment with MySQL DB etc to build on and test?
+yes of course
+And can you provide links for me to test what you do?
+S
+IE - it's not on your local desktop only.
+yes sure
+why not
+S
+OK are you happy to go ahead?
+yes of course
+i will start once you share the db with me
+but not yet hire me
+S
+Looking forward to working with you
+i trust you
+so no need to hurry to hire me on this proj
+slightly smiling face emoji
+Jeremy M. created a milestone
+Milestone: 'Project milestone'
+Amount: $ 500.00 USD
+Congratulations, your bid has been awarded!
+Click the Accept button below to start working.
+This project has a budget of $500.00 USD and you will be charged a project commission of $50.00 USD on accept.
+Accept
+
+Archive 16.zip
+That's the DB sql
+Google key is:
+AIzaSyD9QwREON8hlzJLKQr2hB0dBemVLkYMBWk
+I don't think you should need anything else - please follow the style / layout of the example in the project. Light grey background. Similar map style and pointers. Similar address layout and functionality for results.
+S
+I think everything you need is explained in the project plan.

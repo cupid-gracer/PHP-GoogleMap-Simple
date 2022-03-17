@@ -1,0 +1,122 @@
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Header/Logo Title */
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #dd7129;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Page Content */
+
+.content {
+    padding: 20px;
+}
+
+.item-num {
+    font-size: 2em;
+}
+
+.item-name {
+    font-size: 1.23em;
+    font-family: cursive;
+    text-align: left;
+}
+
+.item-address {
+    text-align: left;
+    font-size: 0.9em;
+    line-height: 0.9em;
+}
+
+.item-distance {
+    color: #e90006;
+    text-align: left;
+    font-size: 0.9em;
+    line-height: 0.9em;
+}
+
+.item-status {
+    color: #e90006;
+    text-align: left;
+    padding: 0px;
+    padding-top: 3px;
+    font-size: 0.9em;
+}
+
+.item-action {
+    padding: 0px;
+}
+
+.item-action>a {
+    color: #e90006;
+    text-align: left;
+    padding: 0px;
+    font-size: 0.8em;
+}
+
+.result-item {
+    border-bottom: 1px solid gray;
+}
+
+.seat-item {
+    border-bottom: 1px solid gray;
+}
+
+.seat-details {
+    display: none;
+    text-align: left;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #e90006;
+}
+
+.marker {
+    margin-top: -18px;
+    margin-left: -1px;
+}
+
+#btn-search {
+    background-color: #d00f39;
+    border-color: #d00f39;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+    border-radius: 2em;
+    max-width: 400px;
+    padding: 0 auto;
+}
+
+.search-form {
+    margin-top: 50px;
+}
+
+.seat-info>div {
+    color: lightslategray;
+}
+
+.seat-info>div div {
+    color: rgb(166, 182, 25);
+}
+
+@media only screen and (max-width: 600px) {
+    #postcode {
+        width: 100%;
+    }
+    #btn-search {
+        width: 100%;
+    }
+}

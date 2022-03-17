@@ -1,0 +1,44 @@
+This requires immediate attention so if you're not available now PLEASE don't apply.
+
+I have a table of addresses (_cinema_address) and a table of events (_seat_detal)
+
+Based on a user-input post code, I need to find results and display the 5 nearest on a map. With an option to show the next 5 as well if user chooses.
+
+This search tool is a good example:
+https://www.postoffice.co.uk/identity/international-driving-permit#bf-full-width
+Use the post code WC2H 9QW to test it.
+
+I'd like this done is CORE PHP or similar - not in any framework. No framework please.
+
+I'd like a very similar style to the layout and results. Just on a plain page with a header banner or logo (just use anything for testing purposes for now).
+
+Conditions for the search:
+nlcwV2_seat_detail table has a location_id which equates to the 'id' field in the nlcwV2_cinema_address table (that's how they are joined).
+each row in nlcwV2_seat_detail is a different event and each the events may take place in different locations or some may be in the same location.
+
+each row in nlcwV2_seat_detail has a 'unique_date' and 'scr_time' which is the date/time of the event.
+each row also has a closing_time and a waiting_close value. This is the number of hours before the unique_date/scr_time that the event should be closed and no longer appear.
+
+Here is an example query - you can decide your own optimum query, but this will pull the right results (but the logic for determining the location of the input postcode and the distance of the results you will need to provide).
+
+SELECT c.* FROM nlcwV2_cinema_address c
+JOIN nlcwV2_seat_detail as s ON s.location_id=c.id
+WHERE DATE_SUB(DATE CONCAT(s.unique_date,' ',s.scr_time), INTERVAL closing_time HOUR)>$now
+GROUP BY c.id order by <DISTANCE FROM INPUT POSTCODE> desc LIMIT 10
+
+This needs to use the Google Maps APIs using your OWN key for testing and we'll change to our key when we copy across once it's approved. If you don't have a Google API key then you'll need to set one up.
+
+The results should be displayed in a very similar style to the link example.
+
+(c=nlcwV2_cinema_address table and s=nlcwV2_seat_detail table values):
+
+Large Number (order of distance) Then alongside that
+c.cinema
+c.address1, c.address2, c.city
+UPPER(c.postcode)
+Distance (in km)
+s.id
+
+I need this working within 3 days (by Friday morning latest UK time).
+
+I will provide the table structures and the relevant data once we have agreed the freelancer.
